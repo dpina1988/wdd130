@@ -1,0 +1,64 @@
+/* * {
+    border: 2px solid blue;
+}*/
+  
+body {
+    background-color: pink;
+}
+
+nav {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+main p {
+    width: 30%;
+    color: white;
+    margin: 50px auto;
+    text-align: center;
+}
+
+main ol {
+    width: 40%;
+    color: black;
+    margin: 50px auto;
+    text-align: left;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-p {
+    width: 30%;
+    font-size: 50px;
+}
+
+.main-p-nelson {
+    font-weight: bolder;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+footer p {
+    width: 15.5%;
+    font-size: 15px;
+    margin: 20px auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1:hover {
+    background-color: pink;
+    color: black;
+}
