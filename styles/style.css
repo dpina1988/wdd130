@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&display=swap');
 
-* {
-    border: 2px solid blue;
-}
-
 body {
     background-color: #219ebc;
     font-size: 22px;
