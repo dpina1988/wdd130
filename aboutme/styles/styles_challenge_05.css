@@ -1,0 +1,19 @@
+/*
+* {
+    border: 2px solid blue;
+  }
+  */
+
+  footer {
+    background-color: grey;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 10%;
+  }
+
+  .main_img {
+    width: 100%;
+    border-radius: 0%;
+  }
