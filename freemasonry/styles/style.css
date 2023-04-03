@@ -18,7 +18,7 @@ footer {
     background-color: #8ecae6;
     color: #FFFFFF;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -176,9 +176,11 @@ nav a:hover {
     opacity: 0.3
 }
 
-.w3-blue,.w3-hover-blue:hover{
-    color:#fff!important;
-    background-color:#8ecae6!important}
+.w3-blue,
+.w3-hover-blue:hover {
+    color: #fff !important;
+    background-color: #8ecae6 !important
+}
 
 .plc-rio {
     grid-column: 7/10;
