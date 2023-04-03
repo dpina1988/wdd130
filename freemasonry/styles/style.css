@@ -97,6 +97,10 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+.h-align {
+    text-align: center;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -252,6 +256,7 @@ nav a:hover {
     font: 16px;
     color: #FFFFFF;
     overflow: auto;
+    text-align: left;
 }
 
 
