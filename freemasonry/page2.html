@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adonhiramite Freemasonry Site</title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -26,8 +26,7 @@
                 <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
             </div>
             <section id="hero-msg">
-                <h1 class="home-title">History of the Adonhiramite Rite</h1>
-                <h4>A brief history of the Adonhiramite Rite</h4>
+                <h1 class="home-title">The Rite in Brazil</h1>
             </section>
         </div>
         <main class="home-grid">
@@ -38,30 +37,115 @@
                 <a href="https://www.excelsoconselho.org.br/" class="bar-item bar-button">ECMA</a>
                 <a href="https://scab.org.br/" class="bar-item bar-button">SCAB</a>
             </div>
-            <section class="#">
-                <img class="#" src="images/grau-18-3.jpg" alt="18º degree">
-                <img class="#" src="images/Grand_Orient_de_France_(emblem).png" alt="Grand Orient de France emblem">
-                <div id="#">
-                    <p>There are records of the practice of the Adonhiramite Rite in a previous period, between 1813 and
-                        1815,
-                        in the first embryo of a Brazilian Masonic Power founded in Salvador, Bahia. In this sense, the
-                        Museum of the United Grand Lodge of England - GLUI, has in its collection an Adonhiramite ritual
-                        translated
-                        by Hipólito José da Costa, perhaps the most prominent Brazilian Freemason in Europe in the XIX
-                        century,
-                        which proves in a documental way the practice of the Adonhiramite Rite in Brazil even before we
-                        became an
-                        independent nation.</p>
 
-                    <p>After the foundation of the Grand Orient of Brazil on June 17th, 1822, the Adonhiramite Rite
-                        remains
-                        being practiced here in a traditional way and enjoys a period of ample growth, notably after the
-                        foundation
-                        of the Grande Oriente do Vale dos Beneditinos, or Grande Oriente do Passeio, whose Lodges would
-                        later be
-                        integrated to the Grand Orient of Brazil. Finally, in 2010 the Adonhiramite Rite made its way
-                        back to Europe,
-                        where it originated, and started being practiced again in Portugal.</p>
+            <section class="slides">
+                <div class="container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/Grand_Orient_de_France_(emblem).png" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/rsz_grau-18-3.jpg" style="width: 100%" ;>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/templo_vazio.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/ugle.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/pin_rito.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/Grand_Orient_de_France_(emblem).png" style="width:100%"
+                                onclick="currentSlide(1)" alt="Grand Orient de France">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/rsz_grau-18-3.jpg" style="width:100%"
+                                onclick="currentSlide(2)" alt="18th degree apron and sash">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/templo_vazio.jpg" style="width:100%"
+                                onclick="currentSlide(3)" alt="Empty Temple in Brazil">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/ugle.jpg" style="width:100%" onclick="currentSlide(4)"
+                                alt="United Grand Lodge of England">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/pin_rito.jpg" style="width:100%"
+                                onclick="currentSlide(5)" alt="Adonhiramite Rite Pin">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("demo");
+                        let captionText = document.getElementById("caption");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+
+                <div id="scroll_box_2">
+                    <p>There are records of the practice of the Adonhiramite Rite in a previous period, between 1813 and
+                        1815, in the first embryo of a Brazilian Masonic Power founded in Salvador, Bahia. In this
+                        sense, the
+                        Museum of the United Grand Lodge of England - UGLE, has in its collection an Adonhiramite ritual
+                        translated by Hipólito José da Costa, perhaps the most prominent Brazilian Freemason in Europe
+                        in the XIX
+                        century, which proves in a documental way the practice of the Adonhiramite Rite in Brazil even
+                        before we
+                        became an independent nation.</p>
+
+                    <p>After the foundation of the Grand Orient of Brazil (GOB) on June 17th, 1822, the Adonhiramite Rite
+                        remains being practiced here in a traditional way and enjoys a period of ample growth, notably
+                        after the
+                        foundation of the Grande Oriente do Vale dos Beneditinos, or Grande Oriente do Passeio, whose
+                        Lodges would
+                        later be integrated to the Grand Orient of Brazil. Finally, in 2010 the Adonhiramite Rite made
+                        its way
+                        back to Europe, where it originated, and started being practiced again in Portugal.</p>
                 </div>
             </section>
         </main>
