@@ -3,7 +3,8 @@
 /*
 * {
     border: 2px solid blue;
-}*/
+}
+*/
 
 
 body {
@@ -201,6 +202,11 @@ nav a:hover {
     grid-row: 2/3;
 }
 
+.box-cps {
+    grid-column: 7/11;
+    grid-row: 2/3;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -361,7 +367,15 @@ nav a:hover {
     text-align: left;
 }
 
-
+#scroll_box_3 {
+    height: 1000px;
+    width: 630px;
+    border: 6px solid #daa520;
+    font: 16px;
+    color: #FFFFFF;
+    overflow: auto;
+    text-align: left;
+}
 
 
 @media screen and (max-width: 900px) {
