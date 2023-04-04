@@ -86,6 +86,16 @@ nav a:hover {
     color: #FFFFFF;
 }
 
+.f_02{
+    background-color: #8ecae6;
+    color: #FFFFFF;
+    padding: 25px 50px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .card-img {
     border: 10px solid #daa520;
     width: 100%;
@@ -206,6 +216,12 @@ nav a:hover {
     grid-column: 7/11;
     grid-row: 2/3;
 }
+
+.msg-cps {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
 
 * {
     box-sizing: border-box;
