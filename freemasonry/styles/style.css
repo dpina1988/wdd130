@@ -363,7 +363,17 @@ nav a:hover {
 
 
 
-#scroll_box {
+#scroll_box_0 {
+    height: 1000px;
+    width: auto;
+    border: 3px solid #daa520;
+    font: 16px;
+    color: #FFFFFF;
+    overflow: auto;
+    text-align: left;
+}
+
+#scroll_box_1 {
     height: 1000px;
     width: auto;
     border: 3px solid #daa520;
